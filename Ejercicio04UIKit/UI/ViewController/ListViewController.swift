@@ -4,6 +4,7 @@ import UIKit
 class ListViewController: UIViewController {
 
     
+    @IBOutlet weak var btnAñadirPersona: UIButton!
     static var identifier: String {
         .init(describing: self)
     }

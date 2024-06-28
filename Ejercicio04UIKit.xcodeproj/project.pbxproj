@@ -20,6 +20,8 @@
 		A95E857A2C2F137600A8A228 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E85792C2F137600A8A228 /* Coordinator.swift */; };
 		A95E857D2C2F148900A8A228 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A95E857C2C2F148900A8A228 /* ListViewController.xib */; };
 		A95E857F2C2F174800A8A228 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E857E2C2F174800A8A228 /* ListViewModel.swift */; };
+		A95E85812C2F66BB00A8A228 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A95E85802C2F66BB00A8A228 /* DetailViewController.xib */; };
+		A95E85832C2F6F9D00A8A228 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E85822C2F6F9D00A8A228 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		A95E85792C2F137600A8A228 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A95E857C2C2F148900A8A228 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		A95E857E2C2F174800A8A228 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		A95E85802C2F66BB00A8A228 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		A95E85822C2F6F9D00A8A228 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 			children = (
 				A95E85412C2EFD1A00A8A228 /* ListViewController.swift */,
 				A95E857C2C2F148900A8A228 /* ListViewController.xib */,
+				A95E85802C2F66BB00A8A228 /* DetailViewController.xib */,
+				A95E85822C2F6F9D00A8A228 /* DetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 			files = (
 				A95E854A2C2EFD1B00A8A228 /* Assets.xcassets in Resources */,
 				A95E854D2C2EFD1B00A8A228 /* Base in Resources */,
+				A95E85812C2F66BB00A8A228 /* DetailViewController.xib in Resources */,
 				A95E857D2C2F148900A8A228 /* ListViewController.xib in Resources */,
 				A95E85452C2EFD1A00A8A228 /* Base in Resources */,
 			);
@@ -325,6 +332,7 @@
 				A95E857A2C2F137600A8A228 /* Coordinator.swift in Sources */,
 				A95E853E2C2EFD1A00A8A228 /* AppDelegate.swift in Sources */,
 				A95E85402C2EFD1A00A8A228 /* SceneDelegate.swift in Sources */,
+				A95E85832C2F6F9D00A8A228 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

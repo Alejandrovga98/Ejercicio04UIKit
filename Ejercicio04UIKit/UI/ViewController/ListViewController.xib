@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="Ejercicio04UIKit" customModuleProvider="target">
             <connections>
+                <outlet property="btnAñadirPersona" destination="d3f-Pk-HgZ" id="3jq-7v-av0"/>
                 <outlet property="view" destination="iN0-l3-epB" id="dmt-Eh-TSx"/>
             </connections>
         </placeholder>
