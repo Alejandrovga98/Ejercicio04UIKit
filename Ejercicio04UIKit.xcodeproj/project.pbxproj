@@ -88,6 +88,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A95B842F2C38414A00F12190 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A95E85312C2EFD1A00A8A228 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +118,7 @@
 		A95E853C2C2EFD1A00A8A228 /* Ejercicio04UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A95B842F2C38414A00F12190 /* Models */,
 				A95E85752C2F109200A8A228 /* UI */,
 				A95E85742C2F108200A8A228 /* Data */,
 				A95E853D2C2EFD1A00A8A228 /* AppDelegate.swift */,

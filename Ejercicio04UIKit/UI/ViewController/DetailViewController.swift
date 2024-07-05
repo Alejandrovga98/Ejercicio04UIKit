@@ -4,6 +4,13 @@ import Foundation
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var nameDetail: UITextField!
+    @IBOutlet weak var colorDetail: UIColorWell!
+    @IBOutlet weak var birthdayDetail: UITextField!
+    @IBOutlet weak var cityDetaul: UITextField!
+    @IBOutlet weak var numberDetail: UITextField!
+    @IBOutlet weak var LocationDetail: UITextField!
+    @IBOutlet weak var personAddBTN: UIButton!
     static var identifier: String {
         .init(describing: self)
     }
@@ -17,4 +24,7 @@ class DetailViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @IBAction func addPerson(_ sender: Any) {
+        
+    }
 }
