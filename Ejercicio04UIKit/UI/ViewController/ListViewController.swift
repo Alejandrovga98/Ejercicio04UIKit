@@ -3,6 +3,7 @@ import UIKit
 
 class ListViewController: UIViewController {
 
+    let viewModel: ListViewModel
     
     @IBOutlet weak var btnAñadirPersona: UIButton!
     static var identifier: String {
@@ -10,7 +11,8 @@ class ListViewController: UIViewController {
     }
     
 
-    init() {
+    init(viewModel: ListViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: Self.identifier,
                    bundle: .main)
     }
@@ -22,6 +24,9 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func addPersonButton(_ sender: Any) {
+        viewModel.detail()
+    }
+    
 }
 

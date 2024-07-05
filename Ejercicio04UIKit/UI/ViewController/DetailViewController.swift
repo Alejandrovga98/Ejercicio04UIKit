@@ -11,12 +11,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var numberDetail: UITextField!
     @IBOutlet weak var LocationDetail: UITextField!
     @IBOutlet weak var personAddBTN: UIButton!
+    
+    let viewModel: DetailViewModel
+    
     static var identifier: String {
         .init(describing: self)
     }
     
 
-   init() {
+    init(viewModel: DetailViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: Self.identifier,
                    bundle: .main)
     }
