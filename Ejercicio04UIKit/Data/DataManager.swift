@@ -5,7 +5,7 @@ import UIKit
 import CoreData
 
 class CoreDataManager: DataManager{
-    func addPerson(name: String, birthday: Date) {
+    func addPerson(name: String, birthday: Date, favoriteCity: String, favoriteColor: String, favoriteNumber: Int, latitude: Double, longitude: Double) {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let context = appDelegate.persistentContainer.viewContext
@@ -13,6 +13,11 @@ class CoreDataManager: DataManager{
         let newPerson = Persons(context: context)
         newPerson.name = name
         newPerson.birthDay = birthday
+        newPerson.favoriteCity = favoriteCity
+        newPerson.favoriteColor = favoriteColor
+        newPerson.favoriteNumber = Int16(favoriteNumber)
+        newPerson.latitude = latitude
+        newPerson.longitude = longitude
         
         do {
             try context.save()
@@ -35,13 +40,18 @@ class CoreDataManager: DataManager{
             return nil
         }
     }
-    func editPersons(person: Persons, name: String, birthday: Date) {
+    func editPersons(person: Persons, name: String, birthday: Date, favoriteCity: String, favoriteColor: String, favoriteNumber: Int, latitude: Double, longitude: Double) {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let context = appDelegate.persistentContainer.viewContext
         
         person.name = name
         person.birthDay = birthday
+        person.favoriteCity = favoriteCity
+        person.favoriteColor = favoriteColor
+        person.favoriteNumber = Int16(favoriteNumber)
+        person.latitude = latitude
+        person.longitude = longitude
         
         do {
             try context.save()

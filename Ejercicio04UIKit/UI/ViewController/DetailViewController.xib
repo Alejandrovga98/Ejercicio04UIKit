@@ -11,7 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Ejercicio04UIKit" customModuleProvider="target">
             <connections>
                 <outlet property="LocationDetail" destination="c4T-Za-X6B" id="Rwc-Nc-E5M"/>
-                <outlet property="cityDetaul" destination="Ni4-B2-CY4" id="ofY-4W-EQk"/>
+                <outlet property="birthdayDetail" destination="ve8-mL-mew" id="w0L-Wy-I10"/>
+                <outlet property="cityDetail" destination="Ni4-B2-CY4" id="PC1-q2-e5Z"/>
                 <outlet property="colorDetail" destination="faT-mg-SjJ" id="Jhr-nv-aT2"/>
                 <outlet property="nameDetail" destination="PXc-gl-F69" id="haU-Hw-ceF"/>
                 <outlet property="numberDetail" destination="Q3I-kP-xok" id="cTK-jW-3ec"/>

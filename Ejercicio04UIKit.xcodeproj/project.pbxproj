@@ -25,6 +25,9 @@
 		A95E857F2C2F174800A8A228 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E857E2C2F174800A8A228 /* ListViewModel.swift */; };
 		A95E85812C2F66BB00A8A228 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A95E85802C2F66BB00A8A228 /* DetailViewController.xib */; };
 		A95E85832C2F6F9D00A8A228 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E85822C2F6F9D00A8A228 /* DetailViewController.swift */; };
+		A9C834682C456D9F00ECE747 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C834672C456D9F00ECE747 /* UIColor+Extension.swift */; };
+		A9C8346B2C457BD700ECE747 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8346A2C457BD700ECE747 /* Cell.swift */; };
+		A9C8346D2C457C2E00ECE747 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C8346C2C457C2E00ECE747 /* Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		A95E857E2C2F174800A8A228 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		A95E85802C2F66BB00A8A228 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		A95E85822C2F6F9D00A8A228 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A9C834672C456D9F00ECE747 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A9C8346A2C457BD700ECE747 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		A9C8346C2C457C2E00ECE747 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,11 +176,13 @@
 		A95E85752C2F109200A8A228 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A9C834692C457BBA00ECE747 /* Cells */,
 				A95E857B2C2F145300A8A228 /* View */,
 				A95E85782C2F133200A8A228 /* Coordinator */,
 				A95E85432C2EFD1A00A8A228 /* Main.storyboard */,
 				A95E85762C2F111500A8A228 /* ViewModel */,
 				A95E85772C2F112F00A8A228 /* ViewController */,
+				A9C834672C456D9F00ECE747 /* UIColor+Extension.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -212,6 +220,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A9C834692C457BBA00ECE747 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A9C8346A2C457BD700ECE747 /* Cell.swift */,
+				A9C8346C2C457C2E00ECE747 /* Cell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A95E854A2C2EFD1B00A8A228 /* Assets.xcassets in Resources */,
+				A9C8346D2C457C2E00ECE747 /* Cell.xib in Resources */,
 				A95E854D2C2EFD1B00A8A228 /* Base in Resources */,
 				A95E85812C2F66BB00A8A228 /* DetailViewController.xib in Resources */,
 				A95E857D2C2F148900A8A228 /* ListViewController.xib in Resources */,
@@ -348,8 +366,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A95E85482C2EFD1A00A8A228 /* Ejercicio04UIKit.xcdatamodeld in Sources */,
+				A9C8346B2C457BD700ECE747 /* Cell.swift in Sources */,
 				A95B843B2C384ABF00F12190 /* DataManager.swift in Sources */,
 				A95E85422C2EFD1A00A8A228 /* ListViewController.swift in Sources */,
+				A9C834682C456D9F00ECE747 /* UIColor+Extension.swift in Sources */,
 				A95E857F2C2F174800A8A228 /* ListViewModel.swift in Sources */,
 				A95B843D2C38515400F12190 /* DetailViewModel.swift in Sources */,
 				A95E857A2C2F137600A8A228 /* Coordinator.swift in Sources */,

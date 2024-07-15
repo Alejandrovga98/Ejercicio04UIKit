@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="Ejercicio04UIKit" customModuleProvider="target">
             <connections>
                 <outlet property="btnAñadirPersona" destination="d3f-Pk-HgZ" id="3jq-7v-av0"/>
+                <outlet property="emptyView" destination="aWG-hH-Guv" id="bNj-Ij-EMB"/>
+                <outlet property="tableVIew" destination="dYC-1I-c9I" id="Wuh-uE-fsy"/>
                 <outlet property="view" destination="iN0-l3-epB" id="dmt-Eh-TSx"/>
             </connections>
         </placeholder>
@@ -31,21 +33,51 @@
                         <action selector="addPersonButton:" destination="-1" eventType="touchUpInside" id="7Gj-bT-Kfo"/>
                     </connections>
                 </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWG-hH-Guv">
+                    <rect key="frame" x="73" y="364.66666666666669" width="247" height="123"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8gR-fo-pmE">
+                            <rect key="frame" x="98.666666666666657" y="21.000000000000007" width="50" height="48.333333333333336"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="2Vv-Ic-Ggu"/>
+                                <constraint firstAttribute="width" constant="50" id="yze-9G-mOw"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No se han encontrado datos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vT5-8e-mXZ">
+                            <rect key="frame" x="16" y="86" width="215" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="vT5-8e-mXZ" firstAttribute="top" secondItem="8gR-fo-pmE" secondAttribute="bottom" constant="16" id="8Kh-W8-m87"/>
+                        <constraint firstItem="8gR-fo-pmE" firstAttribute="centerX" secondItem="aWG-hH-Guv" secondAttribute="centerX" id="OWo-un-6fo"/>
+                        <constraint firstItem="vT5-8e-mXZ" firstAttribute="leading" secondItem="aWG-hH-Guv" secondAttribute="leading" constant="16" id="nQD-yX-uqd"/>
+                        <constraint firstItem="8gR-fo-pmE" firstAttribute="top" secondItem="aWG-hH-Guv" secondAttribute="top" constant="20" id="nVy-vK-rO2"/>
+                        <constraint firstAttribute="bottom" secondItem="vT5-8e-mXZ" secondAttribute="bottom" constant="16" id="rDV-B2-WGc"/>
+                        <constraint firstAttribute="trailing" secondItem="vT5-8e-mXZ" secondAttribute="trailing" constant="16" id="t9N-pX-3uH"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="d3f-Pk-HgZ" firstAttribute="top" secondItem="dYC-1I-c9I" secondAttribute="bottom" constant="30" id="7Eg-68-ogA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="d3f-Pk-HgZ" secondAttribute="bottom" constant="27" id="E66-s5-wAA"/>
+                <constraint firstItem="aWG-hH-Guv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="M9U-KV-M0r"/>
                 <constraint firstItem="dYC-1I-c9I" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="O4N-j6-Ot2"/>
                 <constraint firstItem="dYC-1I-c9I" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XFR-1W-hum"/>
                 <constraint firstItem="d3f-Pk-HgZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="c4G-Jj-Q0P"/>
+                <constraint firstItem="aWG-hH-Guv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cdx-gH-eip"/>
                 <constraint firstItem="dYC-1I-c9I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ynf-lY-c0Q"/>
             </constraints>
             <point key="canvasLocation" x="113.74045801526717" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

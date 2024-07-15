@@ -13,4 +13,7 @@ class ListViewModel {
     func detail () {
         self.coordinator.detail()
     }
+    func fetchPerson() -> [Persons]?{
+        return dataManager.fechtPerson()
+    }
 }
